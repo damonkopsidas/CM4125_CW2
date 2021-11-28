@@ -33,3 +33,11 @@ with st.echo(code_location='below'):
     st.altair_chart(alt.Chart(pd.DataFrame(data), height=500, width=500)
         .mark_circle(color='#0068c9', opacity=0.5)
         .encode(x='x:Q', y='y:Q'))
+
+    # Import and show world happiness dataset for 2015.
+world_happiness_2015 = pd.read_csv('https://www.dropbox.com/s/jzeoltl0nakjqyg/2015.csv?dl=1')
+world_happiness_2016 = pd.read_csv('https://www.dropbox.com/s/kg35k13y3vmadn0/2016.csv?dl=1')
+world_happiness_2017 = pd.read_csv('https://www.dropbox.com/s/ku2dg5cq2gqqzjs/2017.csv?dl=1')
+world_happiness_2018 = pd.read_csv('https://www.dropbox.com/s/1yr0htr2daq42sq/2018.csv?dl=1')
+world_happiness_2019 = pd.read_csv('https://www.dropbox.com/s/hnu8ic6jpnxkmnk/2019.csv?dl=1')
+world_happiness_2015
